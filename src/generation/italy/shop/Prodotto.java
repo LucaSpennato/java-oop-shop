@@ -13,7 +13,16 @@ public class Prodotto {
 		this.name = name;
 		this.description = description;
 		this.price = price;
+		iva = 20;
 		
+	}
+	
+	@Override
+	public String toString() {
+		return "Code: " + code + "\nName: " + name
+				+ "\nDescription: " + description
+				+ "\nPrice: " + price
+				+"\nIva: " + iva;
 	}
 
 }
