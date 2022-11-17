@@ -1,5 +1,7 @@
 package generation.italy.shop;
 
+import java.util.Random;
+
 public class Prodotto {
 	
 	int code;
@@ -14,6 +16,7 @@ public class Prodotto {
 		this.description = description;
 		this.price = price;
 		iva = 20;
+		code = setCode();
 		
 	}
 	
@@ -23,6 +26,12 @@ public class Prodotto {
 	
 	public float getPriceWithIva() {
 		return (float) price + ((float)(price * iva / 100f));
+	}
+	
+	public int setCode() {
+		Random rnd = new Random();
+		
+		return code = rnd.nextInt(99999);
 	}
 	
 	@Override
