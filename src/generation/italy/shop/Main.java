@@ -20,6 +20,8 @@ public class Main {
 		Prodotto p = new Prodotto(name, description, price);
 		System.out.println(p);
 		
+		int getProductPrice = p.getPrice();
+		System.out.println("Product price getter: " + getProductPrice);
 	}
 	
 }
