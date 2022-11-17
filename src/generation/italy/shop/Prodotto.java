@@ -21,8 +21,8 @@ public class Prodotto {
 		return price;
 	}
 	
-	public int getPriceWithIva() {
-		return price + (price * iva / 100);
+	public float getPriceWithIva() {
+		return (float) price + ((float)(price * iva / 100f));
 	}
 	
 	@Override

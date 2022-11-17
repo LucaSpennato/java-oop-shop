@@ -23,7 +23,7 @@ public class Main {
 		int getProductPrice = p.getPrice();
 		System.out.println("Product price getter: " + getProductPrice);
 		
-		int getPriceWithIva = p.getPriceWithIva();
+		float getPriceWithIva = p.getPriceWithIva();
 		System.out.println("Product price plus iva: " + getPriceWithIva);
 	}
 	
